@@ -1,0 +1,87 @@
+{
+  "7e6352561e3b86a6920b0e7f88531df44bac292807bdb53c356f09151ecd5146": {
+    "deviceId": "7e6352561e3b86a6920b0e7f88531df44bac292807bdb53c356f09151ecd5146",
+    "publicKey": "JM0ayb_w00p92yGnqwHtA6PcFZ5PSyKbBBWQnLMa_Xc",
+    "platform": "linux",
+    "clientId": "gateway-client",
+    "clientMode": "backend",
+    "role": "operator",
+    "roles": [
+      "operator"
+    ],
+    "scopes": [
+      "operator.read",
+      "operator.admin",
+      "operator.write",
+      "operator.approvals",
+      "operator.pairing"
+    ],
+    "approvedScopes": [
+      "operator.read",
+      "operator.admin",
+      "operator.write",
+      "operator.approvals",
+      "operator.pairing"
+    ],
+    "tokens": {
+      "operator": {
+        "token": "COyClvdrXghVbBC7y2_PKd1-62NXubrv5AJWT9QwWnU",
+        "role": "operator",
+        "scopes": [
+          "operator.admin",
+          "operator.approvals",
+          "operator.pairing",
+          "operator.read",
+          "operator.write"
+        ],
+        "createdAtMs": 1775196425420,
+        "rotatedAtMs": 1775196909139
+      }
+    },
+    "createdAtMs": 1775196425420,
+    "approvedAtMs": 1775196909139,
+    "displayName": "Telegram Exec Approvals (default)"
+  },
+  "5e1d553d2217bcd65f202176eef352780bcd0d49015c2f9bf40513efb5dfaf16": {
+    "deviceId": "5e1d553d2217bcd65f202176eef352780bcd0d49015c2f9bf40513efb5dfaf16",
+    "publicKey": "hQkXltHnfGUCyxcBye1-MnZn0_IZIpUWmXMCicyffXk",
+    "platform": "MacIntel",
+    "clientId": "openclaw-control-ui",
+    "clientMode": "webchat",
+    "role": "operator",
+    "roles": [
+      "operator"
+    ],
+    "scopes": [
+      "operator.admin",
+      "operator.read",
+      "operator.write",
+      "operator.approvals",
+      "operator.pairing"
+    ],
+    "approvedScopes": [
+      "operator.admin",
+      "operator.read",
+      "operator.write",
+      "operator.approvals",
+      "operator.pairing"
+    ],
+    "remoteIp": "192.168.97.1",
+    "tokens": {
+      "operator": {
+        "token": "vnVZLRhhUEM5mfhF9aTpTFkIwHslJeIZ_SvtpGRJFb0",
+        "role": "operator",
+        "scopes": [
+          "operator.admin",
+          "operator.approvals",
+          "operator.pairing",
+          "operator.read",
+          "operator.write"
+        ],
+        "createdAtMs": 1775196909590
+      }
+    },
+    "createdAtMs": 1775196909590,
+    "approvedAtMs": 1775196909590
+  }
+}

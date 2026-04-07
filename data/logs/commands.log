@@ -1,0 +1,3 @@
+{"timestamp":"2026-04-03T06:32:36.744Z","action":"reset","sessionKey":"agent:main:main","senderId":"unknown","source":"gateway:sessions.reset"}
+{"timestamp":"2026-04-03T06:36:02.826Z","action":"new","sessionKey":"agent:main:main","senderId":"1218178358","source":"telegram"}
+{"timestamp":"2026-04-03T06:43:35.385Z","action":"new","sessionKey":"agent:main:main","senderId":"1218178358","source":"telegram"}

@@ -1,0 +1,39 @@
+{
+  "gateway": {
+    "bind": "lan",
+    "port": 18789,
+    "auth": {
+      "mode": "token",
+      "token": "a595fa5985b1396c5674dbae5bb8c2c72bf5e9ae0d792e25"
+    }
+  },
+  "messages": {
+    "ackReactionScope": "group-mentions"
+  },
+  "agents": {
+    "defaults": {
+      "maxConcurrent": 4,
+      "subagents": {
+        "maxConcurrent": 8
+      },
+      "compaction": {
+        "mode": "safeguard"
+      },
+      "model": "zai/glm-4.7"
+    }
+  },
+  "meta": {
+    "lastTouchedVersion": "2026.4.2",
+    "lastTouchedAt": "2026-04-03T06:31:40.814Z"
+  },
+  "channels": {
+    "telegram": {
+      "enabled": true,
+      "botToken": "8523692617:AAE2HGFkl6V47upGAILqeOytM1Vnv56Ey5g",
+      "allowFrom": [
+        1218178358
+      ],
+      "groupPolicy": "open"
+    }
+  }
+}
