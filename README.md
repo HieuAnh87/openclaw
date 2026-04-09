@@ -42,8 +42,7 @@ Agent AI Telegram được quản lý bằng Docker, sử dụng [OpenClaw](http
 
 ```
 openclaw/
-├── docker-compose.yml           # Docker compose chính
-├── hocai-proxy.docker-compose.yaml  # Nginx proxy config
+├── docker-compose.yml           # OpenClaw agent + HOCAI Nginx proxy
 ├── setup.sh                     # Script setup ban đầu
 ├── openclaw-agent.sh            # Script quản lý agent
 ├── data/
