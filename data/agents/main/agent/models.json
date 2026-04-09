@@ -1,0 +1,327 @@
+{
+  "providers": {
+    "litellm": {
+      "baseUrl": "http://172.19.0.3:9099/v1",
+      "apiKey": "hocai-c08c4e8f8a3a61a47c813bfdca394ab377c1f4d410d1b9a76364f93e9b2c41e0",
+      "api": "openai-completions",
+      "models": [
+        {
+          "id": "claude-haiku-4-5",
+          "name": "Claude Haiku 4.5 (HOCAI)",
+          "input": [
+            "text"
+          ],
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "contextWindow": 200000,
+          "maxTokens": 8192,
+          "reasoning": false,
+          "api": "openai-completions"
+        },
+        {
+          "id": "claude-opus-4-6",
+          "name": "Claude Opus 4.6 (HOCAI)",
+          "input": [
+            "text"
+          ],
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "contextWindow": 200000,
+          "maxTokens": 8192,
+          "reasoning": false,
+          "api": "openai-completions"
+        },
+        {
+          "id": "gpt-5.4-mini",
+          "name": "GPT-5.4 Mini (HOCAI)",
+          "input": [
+            "text"
+          ],
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "contextWindow": 400000,
+          "maxTokens": 128000,
+          "reasoning": false,
+          "api": "openai-completions"
+        },
+        {
+          "id": "gpt-5.4",
+          "name": "GPT-5.4 (HOCAI)",
+          "input": [
+            "text"
+          ],
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "contextWindow": 1050000,
+          "maxTokens": 128000,
+          "reasoning": false,
+          "api": "openai-completions"
+        },
+        {
+          "id": "gpt-5",
+          "name": "GPT-5 (HOCAI)",
+          "input": [
+            "text"
+          ],
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "contextWindow": 1050000,
+          "maxTokens": 128000,
+          "reasoning": false,
+          "api": "openai-completions"
+        }
+      ]
+    },
+    "zai": {
+      "baseUrl": "https://api.z.ai/api/paas/v4",
+      "apiKey": "ZAI_API_KEY",
+      "api": "openai-completions",
+      "models": [
+        {
+          "id": "glm-5.1",
+          "name": "GLM-5.1",
+          "input": [
+            "text"
+          ],
+          "cost": {
+            "input": 1.2,
+            "output": 4,
+            "cacheRead": 0.24,
+            "cacheWrite": 0
+          },
+          "contextWindow": 202800,
+          "maxTokens": 131100,
+          "reasoning": false,
+          "api": "openai-completions"
+        },
+        {
+          "id": "glm-5",
+          "name": "GLM-5",
+          "input": [
+            "text"
+          ],
+          "cost": {
+            "input": 1,
+            "output": 3.2,
+            "cacheRead": 0.2,
+            "cacheWrite": 0
+          },
+          "contextWindow": 202800,
+          "maxTokens": 131100,
+          "reasoning": false,
+          "api": "openai-completions"
+        },
+        {
+          "id": "glm-5-turbo",
+          "name": "GLM-5 Turbo",
+          "input": [
+            "text"
+          ],
+          "cost": {
+            "input": 1.2,
+            "output": 4,
+            "cacheRead": 0.24,
+            "cacheWrite": 0
+          },
+          "contextWindow": 202800,
+          "maxTokens": 131100,
+          "reasoning": false,
+          "api": "openai-completions"
+        },
+        {
+          "id": "glm-5v-turbo",
+          "name": "GLM-5V Turbo",
+          "input": [
+            "text",
+            "image"
+          ],
+          "cost": {
+            "input": 1.2,
+            "output": 4,
+            "cacheRead": 0.24,
+            "cacheWrite": 0
+          },
+          "contextWindow": 202800,
+          "maxTokens": 131100,
+          "reasoning": false,
+          "api": "openai-completions"
+        },
+        {
+          "id": "glm-4.7",
+          "name": "GLM-4.7",
+          "input": [
+            "text"
+          ],
+          "cost": {
+            "input": 0.6,
+            "output": 2.2,
+            "cacheRead": 0.11,
+            "cacheWrite": 0
+          },
+          "contextWindow": 204800,
+          "maxTokens": 131072,
+          "reasoning": false,
+          "api": "openai-completions"
+        },
+        {
+          "id": "glm-4.7-flash",
+          "name": "GLM-4.7 Flash",
+          "input": [
+            "text"
+          ],
+          "cost": {
+            "input": 0.07,
+            "output": 0.4,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "contextWindow": 200000,
+          "maxTokens": 131072,
+          "reasoning": false,
+          "api": "openai-completions"
+        },
+        {
+          "id": "glm-4.7-flashx",
+          "name": "GLM-4.7 FlashX",
+          "input": [
+            "text"
+          ],
+          "cost": {
+            "input": 0.06,
+            "output": 0.4,
+            "cacheRead": 0.01,
+            "cacheWrite": 0
+          },
+          "contextWindow": 200000,
+          "maxTokens": 128000,
+          "reasoning": false,
+          "api": "openai-completions"
+        },
+        {
+          "id": "glm-4.6",
+          "name": "GLM-4.6",
+          "input": [
+            "text"
+          ],
+          "cost": {
+            "input": 0.6,
+            "output": 2.2,
+            "cacheRead": 0.11,
+            "cacheWrite": 0
+          },
+          "contextWindow": 204800,
+          "maxTokens": 131072,
+          "reasoning": false,
+          "api": "openai-completions"
+        },
+        {
+          "id": "glm-4.6v",
+          "name": "GLM-4.6V",
+          "input": [
+            "text",
+            "image"
+          ],
+          "cost": {
+            "input": 0.3,
+            "output": 0.9,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "contextWindow": 128000,
+          "maxTokens": 32768,
+          "reasoning": false,
+          "api": "openai-completions"
+        },
+        {
+          "id": "glm-4.5",
+          "name": "GLM-4.5",
+          "input": [
+            "text"
+          ],
+          "cost": {
+            "input": 0.6,
+            "output": 2.2,
+            "cacheRead": 0.11,
+            "cacheWrite": 0
+          },
+          "contextWindow": 131072,
+          "maxTokens": 98304,
+          "reasoning": false,
+          "api": "openai-completions"
+        },
+        {
+          "id": "glm-4.5-air",
+          "name": "GLM-4.5 Air",
+          "input": [
+            "text"
+          ],
+          "cost": {
+            "input": 0.2,
+            "output": 1.1,
+            "cacheRead": 0.03,
+            "cacheWrite": 0
+          },
+          "contextWindow": 131072,
+          "maxTokens": 98304,
+          "reasoning": false,
+          "api": "openai-completions"
+        },
+        {
+          "id": "glm-4.5-flash",
+          "name": "GLM-4.5 Flash",
+          "input": [
+            "text"
+          ],
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "contextWindow": 131072,
+          "maxTokens": 98304,
+          "reasoning": false,
+          "api": "openai-completions"
+        },
+        {
+          "id": "glm-4.5v",
+          "name": "GLM-4.5V",
+          "input": [
+            "text",
+            "image"
+          ],
+          "cost": {
+            "input": 0.6,
+            "output": 1.8,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "contextWindow": 64000,
+          "maxTokens": 16384,
+          "reasoning": false,
+          "api": "openai-completions"
+        }
+      ]
+    }
+  }
+}

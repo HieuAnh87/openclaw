@@ -1,0 +1,15 @@
+services:
+  hocai-proxy:
+    image: nginx:alpine
+    container_name: hocai-proxy
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:9099:9099"
+    volumes:
+      - ./data/hocai-nginx/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://localhost:9099/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 5s

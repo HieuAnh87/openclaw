@@ -5,6 +5,13 @@
     "auth": {
       "mode": "token",
       "token": "a595fa5985b1396c5674dbae5bb8c2c72bf5e9ae0d792e25"
+    },
+    "controlUi": {
+      "allowedOrigins": [
+        "http://localhost:18789",
+        "http://127.0.0.1:18789",
+        "http://100.68.32.78:18789"
+      ]
     }
   },
   "messages": {
@@ -23,17 +30,328 @@
     }
   },
   "meta": {
-    "lastTouchedVersion": "2026.4.2",
-    "lastTouchedAt": "2026-04-03T06:31:40.814Z"
+    "lastTouchedVersion": "2026.4.5",
+    "lastTouchedAt": "2026-04-08T20:02:18.840Z"
   },
   "channels": {
     "telegram": {
       "enabled": true,
+      "streaming": "partial",
       "botToken": "8523692617:AAE2HGFkl6V47upGAILqeOytM1Vnv56Ey5g",
       "allowFrom": [
         1218178358
       ],
-      "groupPolicy": "open"
+      "groupPolicy": "open",
+      "groupAllowFrom": [
+        "*"
+      ],
+      "groups": {
+        "*": {
+          "requireMention": true
+        }
+      }
+    }
+  },
+  "plugins": {
+    "entries": {
+      "zai": {
+        "enabled": true
+      },
+      "litellm": {
+        "enabled": true
+      }
+    }
+  },
+  "models": {
+    "mode": "merge",
+    "providers": {
+      "zai": {
+        "baseUrl": "https://api.z.ai/api/paas/v4",
+        "apiKey": "82152843ff2b4b319f6a4a86a6220b1b.sUZb9fM45zvtl2Jp",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "glm-5.1",
+            "name": "GLM-5.1",
+            "input": [
+              "text"
+            ],
+            "contextWindow": 202800,
+            "maxTokens": 131100,
+            "cost": {
+              "input": 1.2,
+              "output": 4,
+              "cacheRead": 0.24,
+              "cacheWrite": 0
+            }
+          },
+          {
+            "id": "glm-5",
+            "name": "GLM-5",
+            "input": [
+              "text"
+            ],
+            "contextWindow": 202800,
+            "maxTokens": 131100,
+            "cost": {
+              "input": 1,
+              "output": 3.2,
+              "cacheRead": 0.2,
+              "cacheWrite": 0
+            }
+          },
+          {
+            "id": "glm-5-turbo",
+            "name": "GLM-5 Turbo",
+            "input": [
+              "text"
+            ],
+            "contextWindow": 202800,
+            "maxTokens": 131100,
+            "cost": {
+              "input": 1.2,
+              "output": 4,
+              "cacheRead": 0.24,
+              "cacheWrite": 0
+            }
+          },
+          {
+            "id": "glm-5v-turbo",
+            "name": "GLM-5V Turbo",
+            "input": [
+              "text",
+              "image"
+            ],
+            "contextWindow": 202800,
+            "maxTokens": 131100,
+            "cost": {
+              "input": 1.2,
+              "output": 4,
+              "cacheRead": 0.24,
+              "cacheWrite": 0
+            }
+          },
+          {
+            "id": "glm-4.7",
+            "name": "GLM-4.7",
+            "input": [
+              "text"
+            ],
+            "contextWindow": 204800,
+            "maxTokens": 131072,
+            "cost": {
+              "input": 0.6,
+              "output": 2.2,
+              "cacheRead": 0.11,
+              "cacheWrite": 0
+            }
+          },
+          {
+            "id": "glm-4.7-flash",
+            "name": "GLM-4.7 Flash",
+            "input": [
+              "text"
+            ],
+            "contextWindow": 200000,
+            "maxTokens": 131072,
+            "cost": {
+              "input": 0.07,
+              "output": 0.4,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            }
+          },
+          {
+            "id": "glm-4.7-flashx",
+            "name": "GLM-4.7 FlashX",
+            "input": [
+              "text"
+            ],
+            "contextWindow": 200000,
+            "maxTokens": 128000,
+            "cost": {
+              "input": 0.06,
+              "output": 0.4,
+              "cacheRead": 0.01,
+              "cacheWrite": 0
+            }
+          },
+          {
+            "id": "glm-4.6",
+            "name": "GLM-4.6",
+            "input": [
+              "text"
+            ],
+            "contextWindow": 204800,
+            "maxTokens": 131072,
+            "cost": {
+              "input": 0.6,
+              "output": 2.2,
+              "cacheRead": 0.11,
+              "cacheWrite": 0
+            }
+          },
+          {
+            "id": "glm-4.6v",
+            "name": "GLM-4.6V",
+            "input": [
+              "text",
+              "image"
+            ],
+            "contextWindow": 128000,
+            "maxTokens": 32768,
+            "cost": {
+              "input": 0.3,
+              "output": 0.9,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            }
+          },
+          {
+            "id": "glm-4.5",
+            "name": "GLM-4.5",
+            "input": [
+              "text"
+            ],
+            "contextWindow": 131072,
+            "maxTokens": 98304,
+            "cost": {
+              "input": 0.6,
+              "output": 2.2,
+              "cacheRead": 0.11,
+              "cacheWrite": 0
+            }
+          },
+          {
+            "id": "glm-4.5-air",
+            "name": "GLM-4.5 Air",
+            "input": [
+              "text"
+            ],
+            "contextWindow": 131072,
+            "maxTokens": 98304,
+            "cost": {
+              "input": 0.2,
+              "output": 1.1,
+              "cacheRead": 0.03,
+              "cacheWrite": 0
+            }
+          },
+          {
+            "id": "glm-4.5-flash",
+            "name": "GLM-4.5 Flash",
+            "input": [
+              "text"
+            ],
+            "contextWindow": 131072,
+            "maxTokens": 98304,
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            }
+          },
+          {
+            "id": "glm-4.5v",
+            "name": "GLM-4.5V",
+            "input": [
+              "text",
+              "image"
+            ],
+            "contextWindow": 64000,
+            "maxTokens": 16384,
+            "cost": {
+              "input": 0.6,
+              "output": 1.8,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            }
+          }
+        ]
+      },
+      "litellm": {
+        "baseUrl": "http://172.19.0.3:9099/v1",
+        "apiKey": "hocai-c08c4e8f8a3a61a47c813bfdca394ab377c1f4d410d1b9a76364f93e9b2c41e0",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "claude-haiku-4-5",
+            "name": "Claude Haiku 4.5 (HOCAI)",
+            "contextWindow": 200000,
+            "maxTokens": 8192,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            }
+          },
+          {
+            "id": "claude-opus-4-6",
+            "name": "Claude Opus 4.6 (HOCAI)",
+            "contextWindow": 200000,
+            "maxTokens": 8192,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            }
+          },
+          {
+            "id": "gpt-5.4-mini",
+            "name": "GPT-5.4 Mini (HOCAI)",
+            "contextWindow": 400000,
+            "maxTokens": 128000,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            }
+          },
+          {
+            "id": "gpt-5.4",
+            "name": "GPT-5.4 (HOCAI)",
+            "contextWindow": 1050000,
+            "maxTokens": 128000,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            }
+          },
+          {
+            "id": "gpt-5",
+            "name": "GPT-5 (HOCAI)",
+            "contextWindow": 1050000,
+            "maxTokens": 128000,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            }
+          }
+        ]
+      }
     }
   }
 }

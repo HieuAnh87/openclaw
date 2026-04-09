@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "jobs": [
+    {
+      "id": "e3353143-a74c-4dbb-939f-28a29ff69432",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Morning greeting with weather",
+      "enabled": true,
+      "createdAtMs": 1775613665835,
+      "updatedAtMs": 1775693729744,
+      "schedule": {
+        "kind": "cron",
+        "expr": "15 0 * * *",
+        "tz": "UTC"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Chào buổi sáng Hiếu! ☀️\n\nHãy kiểm tra thời tiết chi tiết tại Hà Nội (nhiệt độ, cảm giác, gió, độ ẩm, điều kiện) và gửi tin nhắn chào buổi sáng kèm thông tin đi làm: từ Đội Cấn đến 188 Lê Quang Đạo, quãng đường 8,6 km, thời gian dự kiến 30-35 phút (giờ cao điểm 8:30), mức tắc đường trung bình (49%). Gửi qua Telegram cho tôi với format ngắn gọn, dễ đọc như đã thống nhất.",
+        "model": "zai/glm-4.7",
+        "timeoutSeconds": 60
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "1218178358"
+      },
+      "state": {
+        "nextRunAtMs": 1775780100000,
+        "lastRunAtMs": 1775693700011,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 29733,
+        "lastError": "⚠️ API rate limit reached. Please try again later.",
+        "lastErrorReason": "rate_limit",
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 1
+      }
+    }
+  ]
+}
