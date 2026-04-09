@@ -63,8 +63,11 @@ Hoặc cập nhật `data/openclaw.json` để đặt làm model mặc định.
 ### Khởi chạy HOCAI Proxy
 
 ```bash
-# Chạy riêng
-docker compose -f hocai-proxy.docker-compose.yaml up -d
+# Chạy cùng openclaw
+docker compose up -d
+
+# Hoặc chỉ restart proxy
+docker compose up -d hocai-proxy
 
 # Xem log
 docker logs -f hocai-proxy
@@ -112,12 +115,14 @@ lsof -i :9099
 
 ## Mạng Docker
 
-LiteLLM và OpenClaw cùng network `172.19.0.0/16`:
+OpenClaw và HOCAI Proxy cùng network `172.19.0.0/16` (bridge mặc định):
 
 ```
-172.19.0.3  → LiteLLM
-172.19.0.x  → OpenClaw
+172.19.0.x  → hocai-proxy
+172.19.0.y  → openclaw-agent
 ```
+
+LiteLLM server chạy ngoài Docker và listen trên `172.19.0.3:9099`.
 
 Kiểm tra network:
 ```bash

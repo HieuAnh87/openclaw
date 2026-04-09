@@ -12,3 +12,18 @@ services:
       - NODE_ENV=production
       - OPENCLAW_GATEWAY_HOST=0.0.0.0
       - ZAI_API_KEY=82152843ff2b4b319f6a4a86a6220b1b.sUZb9fM45zvtl2Jp
+
+  hocai-proxy:
+    image: nginx:alpine
+    container_name: hocai-proxy
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:9099:9099"
+    volumes:
+      - ./data/hocai-nginx/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://localhost:9099/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 5s
